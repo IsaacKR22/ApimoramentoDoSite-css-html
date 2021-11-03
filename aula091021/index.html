@@ -7,9 +7,18 @@
 		<meta name="author" content="Estudantes SENAI - SBO">
 		<meta name="viewport" content="Width=device-with, initial-scale=1.0">
         <link rel="icon" href="img/528111.png" type="image/png" sizes="16x16">
-        <link rel="stylesheet" type="text/css" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    
+        
+        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $("#flip").click(function () {
+                    $("#panel").slideToggle("slow");
+                });
+            });
+        </script>
 	
     </head>
     <style>
@@ -18,15 +27,30 @@
     <body>
        
         <img src="img/imagem1.jpg" width="1200px" height="450px"></img>  
-        <nav id="menu">
-            <h3><a href="index.html">inicial</a>
-            <a href="games.html">games</a>
+
+        <div class="navbar">
+
+            <a href="index.html">inicial</a>
+            
+            <div class="dropdown">
+                <button class="dropbtn" onclick="menu()">GAMES
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="playstation.html">PlayStation 4</a>
+                    <a href="xbox.html">XBox</a>
+                    <a href="ps2.html">Ps2</a>
+                  </div>
+                </div>
             <a href="promoçoes.html">promoções</a>
             <a href="carrinho.html">carrinho</a>
-            <a href="contatos.html">contatos</a></h3>
-        </nav>
-        <H1>INICIAL</H1>
-        <h2>TUDO QUE VOCÊ PROCURA SOBRE JOGOS ESTÁ AQUI</h2>     
+            <a href="contatos.html">contatos</a>
+        </div>
+        
+        <div id="flip"><h3>INICIAL <i class="fa fa-caret-down"></i></div></h3>
+            <i class="fa fa-caret-down"></i></div>
+        <div id="panel">
+            <h2>TUDO QUE VOCÊ PROCURA SOBRE JOGOS ESTÁ AQUI</h2>  
         <div class="container">
             <div class="row">
                 <div class="col-12" text-aling: center;>
@@ -37,7 +61,7 @@
                 
             </div>
         </div>      
-        <h1>⏬  VEJA OPINIOES DOS MELHORES JOGOS ⏬ </h1>
+        <h2> -----⏬VEJA OPINIÕES DOS MELHORES JOGOS----- </h2>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-6" text-aling: center;>
@@ -52,6 +76,11 @@
                     </div>
                 </div>
             </div>
-        </div>      
+        </div>    
+        </div>   
+          
     </body>
+    <footer>
+    </footer>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </html>
