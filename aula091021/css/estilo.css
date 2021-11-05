@@ -238,7 +238,7 @@ img {vertical-align: middle;}
 }
 @media screen and (width-max: 800px){
 
-  .botao,.navbar,.responsivo{
+  .botao,.navbar,{
       width: 20px
 }
 
